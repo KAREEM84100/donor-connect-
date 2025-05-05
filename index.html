@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Donor Connect</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hero-image {
+            background-image: url('https://appscms.boffincoders.com/uploads/I_Save_Life_Blog_Banner_7374da0c56.png');            background-size: cover;
+            background-position: center;
+            height: 450px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+        <div class="text-red-600 font-bold text-xl">🩸 DONOR CONNECT</div>
+        <div class="hidden md:flex space-x-6 text-gray-700">
+            <a href="index.html" class="hover:text-red-600">Home</a>
+            <a href="search.html" class="hover:text-red-600">Search Donors</a>
+            <a href="signup.html" class="hover:text-red-600">Register</a>
+            <a href="login.html" class="hover:text-red-600">Login</a>
+            <a href="contact.html" class="hover:text-red-600">Contact Us</a>
+        </div>
+        <button class="md:hidden text-gray-700 hover:text-red-600 focus:outline-none">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+            </svg>
+        </button>
+    </nav>
+
+    <div class="relative hero-image">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white text-center px-4">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">CONNECT. DONATE. SAVE LIVES.</h1>
+            <p class="text-lg mb-6">Find blood donors near you and make a difference.</p>
+            <a href="search.html" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-semibold">FIND A DONOR</a>
+        </div>
+    </div>
+
+    <main class="flex-grow">
+        <div class="max-w-5xl mx-auto py-12 px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <a href="signup.html" class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition duration-300 ease-in-out">
+                    <div class="text-red-600 text-3xl mb-2">➕</div>
+                    <h2 class="font-bold text-lg">REGISTER AS DONOR</h2>
+                    <p class="text-gray-600 mt-2">Become a life saver. Register to donate blood.</p>
+                </a>
+                <a href="search.html" class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition duration-300 ease-in-out">
+                    <div class="text-red-600 text-3xl mb-2">🩸</div>
+                    <h2 class="font-bold text-lg">NEED BLOOD?</h2>
+                    <p class="text-gray-600 mt-2">Search for available blood donors in your area.</p>
+                </a>
+                <a href="hospital-login.html" class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition duration-300 ease-in-out">
+                    <div class="text-red-600 text-3xl mb-2">🏥</div>
+                    <h2 class="font-bold text-lg">HOSPITAL LOGIN</h2>
+                    <p class="text-gray-600 mt-2">Access the platform as a hospital administrator.</p>
+                </a>
+                <a href="track-request.html" class="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition duration-300 ease-in-out">
+                    <div class="text-red-600 text-3xl mb-2">🔍</div>
+                    <h2 class="font-bold text-lg">TRACK REQUEST</h2>
+                    <p class="text-gray-600 mt-2">Monitor the status of your blood requests.</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white text-center p-6 mt-8 border-t">
+        <div class="mb-2 text-gray-700 font-semibold text-lg">Contact Info</div>
+        <div class="flex justify-center flex-wrap gap-4 text-sm text-gray-600 mt-2">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="contact.html">Contact</a>
+            <a href="social.html">Social Media</a>
+        </div>
+        <div class="mt-4 text-gray-400 text-xs">© 2025 Donor Connect. All rights reserved.</div>
+    </footer>
+
+</body>
+</html>

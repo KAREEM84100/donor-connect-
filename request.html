@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request Blood - Donor Connect</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-red-50 font-sans">
+
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl text-red-600 font-bold">Donor Connect</h1>
+    <div>
+      <a href="index.html" class="text-red-500 mx-2">Home</a>
+      <a href="login.html" class="text-red-500 mx-2">Login</a>
+      <a href="signup.html" class="text-red-500 mx-2">Signup</a>
+      <a href="search.html" class="text-red-500 mx-2">Search</a>
+    </div>
+  </nav>
+
+  <div class="flex justify-center items-center min-h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-lg">
+      <h2 class="text-2xl font-bold text-red-600 mb-6 text-center">Request Blood</h2>
+
+      <form>
+        <label class="block mb-2 text-gray-700">Patient Name</label>
+        <input type="text" class="w-full px-4 py-2 border rounded mb-4" placeholder="Patient Name" required />
+
+        <label class="block mb-2 text-gray-700">Required Blood Group</label>
+        <select class="w-full px-4 py-2 border rounded mb-4" required>
+          <option value="">--Select--</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+
+        <label class="block mb-2 text-gray-700">Hospital / Location</label>
+        <input type="text" class="w-full px-4 py-2 border rounded mb-4" placeholder="Hospital name / address" required />
+
+        <label class="block mb-2 text-gray-700">Contact Number</label>
+        <input type="tel" class="w-full px-4 py-2 border rounded mb-6" placeholder="9876543210" required />
+
+        <button type="submit" class="w-full bg-red-600 text-white py-2 rounded hover:bg-red-700">Submit Request</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
